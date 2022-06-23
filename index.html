@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <title>Vue Hello</title>
+</head>
+<body>
+    <!-- Div con ID necessario per far funzionare Vuejs -->
+    <div id="root">
+        <div> 
+            <!-- Doppia {{}} dove al suo interno metteremo un dato da parte di Vuejs -->
+            <h1>{{ messageToDisplay }}</h1>
+
+            <!-- Inserire v-bind con forma contratta con solo " : " prima dell'attributo in questo caso "src" -->
+            <img :src="imageToDisplay" alt="">
+        </div>
+    </div>
+    <!-- Al di fuori del Div con ID necessario al funzionamento, Vuejs non funziona ritornando così Vanilla -->
+    <script src="js/script.js"></script>
+</body>
+</html>
